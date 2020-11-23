@@ -1,0 +1,23 @@
+* {
+    font-family: 'Cairo', sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(121, 164, 207);
+  }
+
+  .sibl{
+    flex-wrap: wrap;
+      margin: 20px 40px 20px 40px;
+      border: 1px solid rgb(67, 2, 121);
+      border-radius: 25px;
+      padding: 20px;
+  }
+  .heading{
+      color: antiquewhite;
+  }
+  .content{
+      color: aquamarine;
+  }

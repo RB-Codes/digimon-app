@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<link rel="stylesheet" href="../public/style/style.css">
+
+</head>
+
+<body>
+<div class="container">
+<header>
+    <h1 class="content">
+        head
+    </h1>
+</header>
+
+    <head class="heading">
+        <a href="../views/details.ejs"></a>
+        <a href="../views/favorite.ejs"></a>
+        <a href="../views/home.ejs"></a>
+        
+    </head>
+
+    <% tomCrooz.forEach(element => {%>
+    <div>
+        <form action="/home" method="GET" class="heading">
+            <input type="text"  value="<%= element.name%>" class="sibl">
+            <input type="text"  value="<%= element.level%>" class="sibl">
+            <input type="submit">
+        </form>
+    </div>
+    <% }); %>
+
+    
+
+
+
+<footer class="content">
+    <p>foot</p>
+</footer>
+</div>
+</body>
+
+</html>
